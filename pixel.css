@@ -8,9 +8,9 @@ h1 {
     font-size: 70px;
     margin: 0.2em;
 }
-.box {
+.box{
     border: 1px solid #ccc;
-    width:500px;
+    width: 400px;
     margin: 0 auto;
 }
 
