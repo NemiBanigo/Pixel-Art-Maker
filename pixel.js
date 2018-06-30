@@ -8,7 +8,10 @@ jQuery(function () {
         height = $('#inputHeight').val();
         width = $('#inputWidth').val();
         console.log(height, width);
+        makeGrid(height, width);
     })
+
+
 
 
     // Select color input
@@ -16,9 +19,22 @@ jQuery(function () {
 
     // When size is submitted by the user, call makeGrid()
 
-    function makeGrid() {
+    function makeGrid(a, b) {
+        $('tr').remove();
+        for (let i = 1; i <= a; i++) {
+            $('#pixelCanvas').append('<tr id=table' + i + '> </tr>');
+            for (let j = 1; j <= b; j++) {
+                $('#table' + i).append('<td></td>');
+
+            }
+        }
+
+
 
         // Your code goes here!
+
+
+
 
     }
 });
