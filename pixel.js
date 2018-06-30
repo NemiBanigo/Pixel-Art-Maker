@@ -7,7 +7,7 @@ jQuery(function () {
         event.preventDefault();
         height = $('#inputHeight').val();
         width = $('#inputWidth').val();
-        console.log(height, width);
+
         makeGrid(height, width);
     })
 
