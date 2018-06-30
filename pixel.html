@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="pixel.css">
+</head>
+
+<body>
+    <h1> Nemi's Pixel Art Maker </h1>
+    <div class="box">
+        <h2>Choose Grid Size</h2>
+
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="1">
+            <input type="submit">
+        </form>
+
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+    </div>
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="pixel.js"></script>
+</body>
+
+</html>
