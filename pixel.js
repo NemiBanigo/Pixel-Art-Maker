@@ -1,9 +1,14 @@
 jQuery(function () {
     let height;
-    width;
-    color;
+    let width;
+    let color;
 
-    $('#sizePicker').submit()
+    $('#sizePicker').submit(function (event) {
+        event.preventDefault();
+        height = $('#inputHeight').val();
+        width = $('#inputWidth').val();
+        console.log(height, width);
+    })
 
 
     // Select color input
