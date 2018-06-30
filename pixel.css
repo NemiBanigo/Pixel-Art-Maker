@@ -12,6 +12,8 @@ h1 {
     border: 1px solid #ccc;
     width: 400px;
     margin: 0 auto;
+    background: fff;
+    box-shadow:  inset 5em 1em gold;
 }
 
 h2 {
