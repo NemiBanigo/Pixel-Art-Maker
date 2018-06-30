@@ -11,12 +11,6 @@ jQuery(function () {
         makeGrid(height, width);
     })
 
-
-
-
-    // Select color input
-    // Select size input
-
     // When size is submitted by the user, call makeGrid()
 
     function makeGrid(a, b) {
@@ -29,12 +23,24 @@ jQuery(function () {
             }
         }
 
+        $('td').click(function addColor() {
+            color = $('#colorPicker').val();
 
 
-        // Your code goes here!
-
-
-
-
+            if ($(this).attr('style')) {
+                $(this).removeAttr('style')
+            }
+            else {
+                $(this).attr('style', 'background-color:' + color)
+            }
+        })
     }
+
+
+    // Your code goes here!
+
+
+
+
+
 });
